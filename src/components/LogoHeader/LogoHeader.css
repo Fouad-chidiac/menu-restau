@@ -1,0 +1,21 @@
+.LogoHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 0;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 20px;
+  }
+  
+  .LogoHeader-img {
+    height: 100vw;
+    max-height: 40vw;
+    /* margin-right: 15px; */
+    @media (max-width:425) {
+        height: 60vw;
+    }
+  }
+  
+  
+  
