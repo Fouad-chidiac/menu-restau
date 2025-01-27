@@ -1,21 +1,41 @@
+/* Main container */
 .LogoHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    padding: 20px 0;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+/* Logo image animation */
+.LogoHeader-img {
+  height: 100vw;
+  max-height: 40vw;
+  opacity: 0; /* Initially hidden */
+  transform: scale(0.8) rotate(-10deg); /* Starting with scale and rotation */
+  animation: logoAnimation 2s ease-out forwards; /* Apply the animation */
+}
+
+/* Logo Animation */
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotate(-10deg);
   }
-  
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05) rotate(10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 425px) {
   .LogoHeader-img {
-    height: 100vw;
-    max-height: 40vw;
-    /* margin-right: 15px; */
-    @media (max-width:425) {
-        height: 60vw;
-    }
+    height: 60vw;
   }
-  
-  
-  
+}

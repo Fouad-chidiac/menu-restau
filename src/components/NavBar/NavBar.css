@@ -34,9 +34,9 @@
 
 .Navbar button:hover {
   background: rgba(255, 255, 255, 0.1);
-  color: #ffcc00;
+  color: #FA0D5E;
 }
 
 .Navbar button:active {
-  border-bottom: 2px solid #ffcc00;
+  border-bottom: 2px solid #FA0D5E;
 }
